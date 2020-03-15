@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Link to boostrap for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- Link to fontawesome for styling -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- Link to googleapis for font styling -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <!-- Link to cloudflare for save button icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- Link to CSS page for additional styling -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title of the webpage -->
+    <title>Work Day Scheduler</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- Jumbotton class in the css file styles the header -->
+    <header class="jumbotron">
+        <!-- H1 Tag -->
+        <!-- Display-3 class for the title styling-->
+        <h1 class="display-3">Work Day Scheduler</h1>
+        <!-- Paragraph with a description of the app and lead class for stlyling -->
+        <p class="lead">A simple calendar app for scheduling your work day</p>
+        <!-- A paragraph tag to be targeted by the script to insert a  -->
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">9AM</div>
+            <input id="nine" class="col-10 border-top border-right border-left" time="9" position="0">
+            <button id="button-9" type="button" data-targetInput="#nine" class="col-1 btn btn-info"></button>
+        </div>
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">10AM</div>
+            <input id="ten" class="col-10 border-top border-right border-left time" time="10" position="1">
+            <button id="button-10" type="button" data-targetInput="#ten" class="col-1 btn btn-info"></button>
+        </div>
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">11AM</div>
+            <input id="eleven" class="col-10 border-top border-right border-left time" time="11" position="2">
+            <button id="button-11" type="button" data-targetInput="#eleven" class="col-1 btn btn-info"></button>
+        </div>
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">12PM</div>
+            <input id="twelve" class="col-10 border-top border-right border-left time" time="12" position="3">
+            <button id="button-12" type="button" data-targetInput="#twelve" class="col-1 btn btn-info"></button>
+        </div>
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">1PM</div>
+            <input id="one" class="col-10 border-top border-right border-left time" time="13" position="4">
+            <button id="button-13" type="button" data-targetInput="#one" class="col-1 btn btn-info"></button>
+        </div>
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">2PM</div>
+            <input id="two" class="col-10 border-top border-right border-left time" time="14" position="5">
+            <button id="button-14" type="button" data-targetInput="#two" class="col-1 btn btn-info"></button>
+        </div>
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">3PM</div>
+            <input id="three" class="col-10 border-top border-right border-left time" time="15" position="6">
+            <button id="button-15" type="button" data-targetInput="#three" class="col-1 btn btn-info"></button>
+        </div>
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">4PM</div>
+            <input id="four" class="col-10 border-top border-right border-left time" time="16" position="7">
+            <button id="button-16" type="button" data-targetInput="#four" class="col-1 btn btn-info"></button>
+        </div>
+        <div class="row">
+            <div class="col-1 border-top text-right pt-3">5PM</div>
+            <input id="five" class="col-10 border-top border-right border-left time" time="17" position="8">
+            <button id="button-17" type="button" data-targetInput="#five" class="col-1 btn btn-info"></button>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
