@@ -21,22 +21,36 @@
 
 <body>
     <!-- Header -->
-    <!-- Jumbotton class in the css file styles the header -->
+    <!-- Jumbotton class in the css file, styles the header -->
     <header class="jumbotron">
         <!-- H1 Tag -->
         <!-- Display-3 class for the title styling-->
         <h1 class="display-3">Work Day Scheduler</h1>
         <!-- Paragraph with a description of the app and lead class for stlyling -->
         <p class="lead">A simple calendar app for scheduling your work day</p>
-        <!-- A paragraph tag to be targeted by the script to insert a  -->
+        <!-- A paragraph tag to be targeted by the script to insert the current day -->
         <p id="currentDay" class="lead"></p>
     </header>
+
+    <!-- Div container for the daily planner -->
     <div class="container">
+        <!-- Inside the container there are 9 rows, one for each timeslot -->
+        <!-- Each row has 3 columns (the time, the event and a save button) -->
+        <!-- Styling was using bootstrap's CSS grid layout and other predefined classes -->
+
         <div class="row">
+            <!-- The Div class is the time slot -->
             <div class="col-1 border-top text-right pt-3">9AM</div>
+            <!-- The input allows the user to input an event to be stored in the planner -->
+            <!-- The input tag contains an id, time attribute and position attribute -->
+            <!-- The id is used to select the input, the time is used to get a value to compare for time in the script -->
+            <!-- Position is used to know which time slot each one is in the script  -->
             <input id="nine" class="col-10 border-top border-right border-left" time="9" position="0">
-            <button id="button-9" type="button" data-targetInput="#nine" class="col-1 btn btn-info"></button>
+            <!-- The button is used to save the event the user inputed  -->
+            <!-- The data-targetInput is used to associate the button with the input in the script -->
+            <button type="button" data-targetInput="#nine" class="col-1 btn btn-info"></button>
         </div>
+
         <div class="row">
             <div class="col-1 border-top text-right pt-3">10AM</div>
             <input id="ten" class="col-10 border-top border-right border-left time" time="10" position="1">
@@ -80,9 +94,11 @@
 
 
     </div>
-
+    <!-- Link to jqeury library -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Link to cloudflare library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Link to script file -->
     <script src="script.js"></script>
 </body>
 
